@@ -49,3 +49,4 @@ new_menu.update_item("Salad", 20, "A", True)
 new_menu.remove_item("French Fries")
 
 new_menu.remove_item("Sushi")
+
