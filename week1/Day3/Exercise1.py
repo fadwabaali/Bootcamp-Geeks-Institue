@@ -103,6 +103,7 @@ class Zoo:
         grouped_animals = self.sort_animals()
         print("Animals grouped by their first letter:")
         for letter, animals in grouped_animals.items():
+            # print(f"{letter}: {animals}")
             print(f"{letter}: {', '.join(animals)}")
         
 zoo = Zoo("The Great Zoo")
@@ -112,6 +113,7 @@ zoo.add_animal("Elephant")
 zoo.add_animal("Zebra")
 zoo.add_animal("Bear")
 zoo.add_animal("liom")
+zoo.add_animal("leo")
 zoo.add_animal("tiger")
 zoo.add_animal("Cat")
 zoo.add_animal("Dog")
