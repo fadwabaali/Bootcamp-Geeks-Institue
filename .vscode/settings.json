@@ -3,5 +3,29 @@
         "activityBar.background": "#28216C",
         "titleBar.activeBackground": "#382F98",
         "titleBar.activeForeground": "#FBFAFE"
-    }
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "PG Local",
+            "database": "public",
+            "username": "postgres",
+            "password": "Fadwarmy@2006",
+            "connectionTimeout": 30
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "PG Local",
+            "database": "bootcamp",
+            "username": "postgres",
+            "connectionTimeout": 30,
+            "password": "Fadwarmy@2006"
+        }
+    ]
 }

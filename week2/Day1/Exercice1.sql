@@ -1,19 +1,18 @@
 -- -- create items table
 CREATE TABLE items(
-    item_id SERIAL PRIMARY KEY,
-    item TEXT,
-    price INT
-);
+	id SERIAL PRIMARY KEY,
+	name VARCHAR (50) NOT NULL,
+	price INTEGER NOT NULL
+)
 
 -- -- create customers table
-CREATE TABLE  customers(
-	customer_id SERIAL PRIMARY KEY,
-	first_name TEXT,
-	last_name TEXT
-);
-
+CREATE TABLE customers (
+	id Serial  PRIMARY KEY,
+	first_name VARCHAR(100) NOT NULL,
+	last_name VARCHAR (100) NOT NULLSELECT * FROM items;SELECT * FROM items;
+)
 -- -- insert data
-INSERT INTO items(item,price)
+INSERT INTO items(name,price)
 VALUES ('Small Desk',100),
 	   ('Large desk',300),
 	   ('Fan',80);
