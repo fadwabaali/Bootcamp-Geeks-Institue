@@ -26,6 +26,17 @@
             "username": "postgres",
             "connectionTimeout": 30,
             "password": "Fadwarmy@2006"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "PG Local",
+            "database": "dvdrental",
+            "username": "postgres",
+            "connectionTimeout": 30,
+            "password": "Fadwarmy@2006"
         }
     ]
 }
