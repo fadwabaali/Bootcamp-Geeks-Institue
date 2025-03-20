@@ -63,4 +63,3 @@ while True:
 conn.close()
 
 
-# flag = country['flags']['png'] if 'flags' in country and 'png' in country['flags'] else ''

@@ -28,7 +28,7 @@ def insert_country(country):
     """Inserts a country into the database."""
     name = country['name']['common']
     capital = country.get('capital', [''])[0]
-    flag = country.get('flags', '')
+    flag = country['flags']['png'] if 'flags' in country and 'png' in country['flags'] else ''
     subregion = country.get('subregion', '')
     population = country.get('population', 0)
     
