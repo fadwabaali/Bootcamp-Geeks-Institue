@@ -6,8 +6,6 @@ load_dotenv()
 
 class Database:
     _conn = None
-
-    @staticmethod
     def get_connection():
         """Return a single connection to the database."""
         if Database._conn is None:
@@ -20,7 +18,6 @@ class Database:
             )
         return Database._conn
 
-    @staticmethod
     def close_connection():
         """Close the connection."""
         if Database._conn:
