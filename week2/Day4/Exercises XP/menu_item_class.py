@@ -50,7 +50,9 @@ class Menu_Item:
             print(f"{self.name} price updated successfully")
         except Exception as e:
             print(f"Error updating price for {self.name}: {str(e)}")
-            
+    def __str__(self):
+        return f"Menu_Item(name={self.name}, price={self.price})"
+
 item = Menu_Item('Burger', 35)
 item.save()
 item = Menu_Item('pizza', 20)

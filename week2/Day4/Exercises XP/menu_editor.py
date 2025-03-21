@@ -71,9 +71,9 @@ def show_restaurant_menu():
     if items:
         print("\n--- Restaurant Menu ---")
         for item in items:
-            print(f"Name: {item.name}, Price: {item.price}")
+            print(item)  # This will use the __str__ method of Menu_Item
     else:
         print("The menu is currently empty.")
-
+        
 if __name__ == "__main__":
     show_user_menu()
