@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .drum-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+        }
+        
+        .drum {
+            width: 100px;
+            height: 100px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff6347;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        
+        .drum:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1>Drumset</h1>
+    <div class="drum-container">
+        <button class="drum" data-key="65">A</button>
+        <button class="drum" data-key="83">S</button>
+        <button class="drum" data-key="68">D</button>
+        <button class="drum" data-key="70">F</button>
+        <button class="drum" data-key="71">G</button>
+        <button class="drum" data-key="72">H</button>
+        <button class="drum" data-key="74">J</button>
+        <button class="drum" data-key="75">K</button>
+        <button class="drum" data-key="76">L</button>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+    <script src="Drumset.js"></script>
+</body>
+</html>
