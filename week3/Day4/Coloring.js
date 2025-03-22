@@ -23,22 +23,22 @@ for (let i = 0; i < 100; i++) {
 let selectedColor = 'black';
 let isDrawing = false;
 
-function selectColor(color) {
+const selectColor = (color) => {
     selectedColor = color;
 }
 
-function startDrawing(event) {
+const startDrawing = (event) => {
     isDrawing = true;
     event.target.style.backgroundColor = selectedColor;
 }
 
-function draw(event) {
+const draw = (event) => {
     if (isDrawing) {
         event.target.style.backgroundColor = selectedColor;
     }
 }
 
-function stopDrawing() {
+const stopDrawing = () =>{
     isDrawing = false;
 }
 
