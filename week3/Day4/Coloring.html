@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring Squares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        #color-palette {
+            display: grid;
+            grid-template-columns: repeat(5, 50px);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #color-palette div {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        
+        #drawing-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            gap: 2px;
+        }
+        
+        #drawing-grid div {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coloring Squares</h1>
+    <div id="color-palette">
+        <!-- Color palette will be generated here -->
+    </div>
+    <div id="drawing-grid">
+        <!-- Drawing grid will be generated here -->
+    </div>
+    <script src="Coloring.js"></script>
+</body>
+</html>
