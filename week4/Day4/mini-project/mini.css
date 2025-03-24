@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B09E99;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D8CFCC;
+}
+
+#quote-section {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#quote-text {
+    font-size: 1.5em;
+    color: #6C757D;
+    margin-bottom: 10px;
+}
+
+#quote-author {
+    font-size: 1.2em;
+    color: #64B6AC;
+}
+
+button {
+    background-color: #64B6AC;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
