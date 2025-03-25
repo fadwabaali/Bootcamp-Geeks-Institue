@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quote Generator</title>
     <link rel="stylesheet" href="mini.css">
 </head>
 <body>
     <div class="container">
-        <button id="generate-quote">Generate Quote</button>
         <section id="quote-section">
             <p id="quote-text"></p>
             <p id="quote-author"></p>
         </section>
+        <button id="generate-quote">Generate Quote</button>
+        <form id="add-quote-form">
+            <input type="text" id="new-quote" placeholder="Quote" required>
+            <input type="text" id="new-author" placeholder="Author" required>
+            <button type="submit">Add Quote</button>
+        </form>
+        <button id="char-count">Character Count (with spaces)</button>
+        <button id="char-count-no-spaces">Character Count (no spaces)</button>
+        <button id="word-count">Word Count</button>
+        <button id="like-quote">Like</button>
+        <p id="like-count">Likes: 0</p>
     </div>
-
-    <script src="./mini.js"></script>
+    <div>
+        <form id="filter-form">
+            <input type="text" id="filter-author" placeholder="Author" required>
+            <button type="submit">Filter Quotes</button>
+        </form>
+        <button id="prev-quote" style="display: none;">Previous</button>
+        <button id="next-quote" style="display: none;">Next</button>
+    </div>
+    <script src="mini.js"></script>
 </body>
 </html>

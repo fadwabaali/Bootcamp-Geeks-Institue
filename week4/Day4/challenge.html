@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #output {
+            margin-top: 20px;
+            font-family: monospace;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="user-form">
+        <input type="text" id="name" placeholder="First Name" required>
+        <input type="text" id="last-name" placeholder="Last Name" required>
+        <button type="submit">Send</button>
+    </form>
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('user-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from refreshing the page
+
+            const name = document.getElementById('name').value;
+            const lastName = document.getElementById('last-name').value;
+
+            const userData = {
+                name: name,
+                lastName: lastName
+            };
+
+            // Append the JSON string to the DOM
+            const outputDiv = document.getElementById('output');
+            outputDiv.textContent = JSON.stringify(userData, null, 2);
+        });
+    </script>
+</body>
+</html>
