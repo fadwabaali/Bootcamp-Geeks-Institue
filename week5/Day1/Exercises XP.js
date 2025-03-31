@@ -20,7 +20,6 @@ compareToTen(8)
   .then(result => console.log(result))
   .catch(error => console.log(error))
 
-// 🌟 Exercise 2 : Promises
 
 // 🌟 Exercise 2 : Promises
 
