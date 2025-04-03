@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Character Finder</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background-color: #feda4a;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e6c637;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#error-message {
+    color: red;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#character-info {
+    text-align: left;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Star Wars Character Finder</h1>
+        <button id="get-character">Get Random Character</button>
+        <i class="fa-solid fa-triangle-exclamation fa-fade"></i>
+        <div id="loading" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div id="error-message" class="hidden">Oh No! That Person isnt available.</div>
+        <div id="character-info" class="hidden">
+            <h2 id="character-name" style="text-align: center;"></h2>
+            <p><strong>Height:</strong> <span id="character-height"></span> cm</p>
+            <p><strong>Gender:</strong> <span id="character-gender"></span></p>
+            <p><strong>Birth Year:</strong> <span id="character-birth"></span></p>
+            <p><strong>Home World:</strong> <span id="character-homeworld"></span></p>
+        </div>
+    </div>
+
+    <script src="./exercicestar.js"></script>
+
+</body>
+</html>
