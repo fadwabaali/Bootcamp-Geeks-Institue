@@ -1,4 +1,4 @@
-const products = require('./products.js');
+const products = require('./fsmanager/products.js');
 
 const findProductByName = (productName) => {
     const product = products.find((item) => item.name === productName);
