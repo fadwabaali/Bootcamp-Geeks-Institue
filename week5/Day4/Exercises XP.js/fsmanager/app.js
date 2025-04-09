@@ -1,4 +1,4 @@
-import { persons } from '../data.js';
+import { persons } from '../../data.js';
 
 import { readFile, writeFile } from './fileManager.js';
 
