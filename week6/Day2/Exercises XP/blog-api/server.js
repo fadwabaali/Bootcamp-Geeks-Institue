@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const router = require('./routes/index.js');
 const sequelize = require('./config/db');
-const Post = require('./models/post');
+const Post = require('./models/post.js');
 
 const app = express();
 app.use(bodyParser.json());
