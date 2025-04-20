@@ -48,6 +48,17 @@
             "database": "restaurant_menu",
             "password": "Fadwarmy@2006",
             "connectionTimeout": 30
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "postgres",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "Fadwarmy@2006",
+            "connectionTimeout": 30
         }
     ]
 }
