@@ -1,0 +1,18 @@
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: purple;
+    padding: .5rem;
+}

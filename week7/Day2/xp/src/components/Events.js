@@ -16,7 +16,7 @@ const Events = () => {
     <div>
         <button onClick={clickMe}>Click me</button>
         <input type="text" onKeyDown={handleKeyDown} placeholder="Press Enter" />
-        <button onClick={e => setIsToggleOn(!isToggleOn)}>{isToggleOn? "On": "Off"}</button>
+        <button onClick={() => setIsToggleOn(!isToggleOn)}>{isToggleOn? "On": "Off"}</button>
     </div>
   )
 }
