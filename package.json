@@ -18,6 +18,7 @@
   "homepage": "https://github.com/fadwabaali/Bootcamp-Geeks-Institue#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "react-responsive-carousel": "^3.2.23"
   }
 }
